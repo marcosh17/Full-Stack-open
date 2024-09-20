@@ -82,7 +82,7 @@ npm start
 
 ## Author
 
-This repository is maintained by **[Your Name]** as part of the exercises for the Full Stack Open 2024 course.
+This repository is maintained by [marcosh17](https://github.com/marcosh17) as part of the exercises for the Full Stack Open 2024 course.
 
 ## License
 
