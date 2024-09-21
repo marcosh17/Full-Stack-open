@@ -1,5 +1,8 @@
 # Full Stack Open 2024 - University of Helsinki
 
+![main image](./images/mainimage.png)
+
+
 This repository contains the exercises and projects completed during the [Full Stack open](https://fullstackopen.com/en/)
  course offered by the University of Helsinki.
 
@@ -9,37 +12,38 @@ The Full Stack Open course dives deep into the development of web applications u
 
 Technologies and tools you will work with include:
 
-- React
-- Redux
-- Node.js
-- Express
-- MongoDB
-- GraphQL
-- TypeScript
-- Testing (Jest, Cypress)
-- Docker
+- [React](https://reactjs.org/docs/getting-started.html)
+- [Redux](https://redux.js.org/introduction/getting-started)
+- [Node.js](https://nodejs.org/en/docs)
+- [Express](https://expressjs.com/en/starter/installing.html)
+- [MongoDB](https://www.mongodb.com/docs/)
+- [GraphQL](https://graphql.org/learn/)
+- [TypeScript](https://www.typescriptlang.org/docs/)
+- [Testing (Jest)](https://jestjs.io/docs/getting-started)
+- [Testing (Cypress)](https://docs.cypress.io/guides/overview/why-cypress)
+- [Docker](https://docs.docker.com/get-started/)
+
 
 ## Repository Structure
 
 Each module or part of the course is organized in its respective folder, and within each folder, you will find the exercises and projects. The repository is structured as follows:
 
-```bash
-.
-├── part0: Fundamentals of Web apps
-├── part1: Introduction to React
-├── part2: Communicating with server
-├── part3: Programming a server with NodeJS and Express
-├── part4: Testing Express servers, user administration
-├── part5: Testing React apps
-├── part6: Advanced state management
-├── part7: React router, custom hooks, tyling app with CSS and webpack
-├── part8: GraphQL
-├── part9: TypeScript
-├── part10: React Native
-├── part11: CI/CD
-├── part12: Containers
-└── part13: Using relational databases
-```
+
+- part0: Fundamentals of Web apps
+- [part1: Introduction to React](./part1)  
+- [part2: Communicating with server](./part2)  
+- [part3: Programming a server with NodeJS and Express](./part3)  
+- [part4: Testing Express servers, user administration](./part4)  
+- [part5: Testing React apps](./part5)  
+- [part6: Advanced state management](./part6)  
+- [part7: React router, custom hooks, styling app with CSS and webpack](./part7)  
+- [part8: GraphQL](./part8)  
+- [part9: TypeScript](./part9)  
+- [part10: React Native](./part10)  
+- [part11: CI/CD](./part11)  
+- [part12: Containers](./part12)  
+- [part13: Using relational databases](./part13)
+
 
 Each folder represents a "part" of the course, and within each, there are subdirectories for the exercises and projects.
 
@@ -53,6 +57,23 @@ If you wish to clone this repository and explore the exercises on your own, foll
 git clone https://github.com/your-username/fullstackopen2024.git
 cd fullstackopen2024
 ```
+
+To create all the folders related to each part of the project, go to your repository path and use the following code (PowerShell on Windows)
+
+```bash
+foreach ($i in 1..13) {
+    mkdir "part$i"
+}
+```
+
+Then, to add a readme.md to each part, use the following code:
+
+```bash
+foreach ($i in 1..13) {
+    New-Item -Path "part$i/README.md" -ItemType "File"
+}
+```
+
 
 2. Navigate to the part/module you are interested in:
 
